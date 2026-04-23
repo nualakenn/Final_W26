@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Nuala's Gallery</title>
+</head>
+
+
+<body>
+
+    <!--skip-->
+    <div class="skip">
+        <a href = "">Skip to Main Content</a>
+    </div>
+
+    <!--header-->
+    <div class="header">
+    <header>
+
+        <!-- Dark mode created with help from
+        https://dev.to/nilebits/10-amazing-things-you-can-do-with-simple-javascript-2d96 -->
+        <button id="toggle-dark-mode">Toggle Dark Mode</button>
+        <script>
+            const button = document.getElementById('toggle-dark-mode');
+            button.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            });
+        </script>
+
+        <!--nav-->
+        <nav>
+            <ul>
+                <li><a href = "index.html">About</a></li>
+                <li><a href = "sketchbook.html">Sketchbook</a></li>
+                <li><a href = "furniture.html">Furniture</a></li>
+                <li><a href = "animation.html"class="active">Animation</a></li>
+            </ul>
+        </nav>
+
+        <!--header-banner-->
+        <div class="header-banner">
+            <h1>Animation</h1>
+            <h2>2D animated pieces</h2>
+        </div>
+
+    </header>
+    </div>
+
+
+<!-- Content -->
+    <main id="main-content">
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Elm')">Elm</button>
+            <button class="tablinks" onclick="openCity(event, 'Solace')">Solace</button>
+            <button class="tablinks" onclick="openCity(event, 'Doorway')">Doorway</button>
+        </div>
+
+
+        <div id="Elm" class="tabcontent">
+            <h3>The Story of Elm</h3>
+
+            <div class="video">
+                <iframe width="560" height="315" src="https://vimeo.com/935595389?fl=ip&fe=ec"
+                frameborder="0" allowfullscreen></iframe>
+
+                <p class ="item-name">The Story of Elm</p>
+                <p class ="style-name">2D Animation | Procreate, Photoshop, Clip Studio Paint | 4:10</p>
+            </div>
+
+            <p>Elm: Navigating a Dying World is a 2D-animated short that explores loneliness and grief 
+                through the lens of nature. Like humans, trees are social beings. They grow and experience 
+                hardship in ways similar to ours. Both humans and trees get sick, both need sunlight and water, 
+                and both grow and adapt to their surroundings. These similarities help people to connect with 
+                nature through appreciation and sympathy. As global warming and other disasters like diseases 
+                often make it feel like the world is ending, it is important to take a moment to appreciate the 
+                good in nature around us on a daily basis. <br>
+                <br>Through Elm, I hope for people to find a connection to the world around them, and the next time 
+                they step outside, they might take more time to feel the sun on their faces and hear the breeze 
+                brush through the leaves. The story aims to inspire people to understand that despite hardship, 
+                life goes on. For every tree that is cut, a new one will sprout up. </p>
+        </div>
+
+
+        <div id="Solace" class="tabcontent">
+            <h3>Solace</h3>
+
+            <div class="video">
+                <iframe width="560" height="315" src="https://vimeo.com/908952980/fc90e52daa?share=copy&fl=sv&fe=ci"
+                frameborder="0" allowfullscreen></iframe>
+
+                <p class ="item-name">Solace</p>
+                <p class ="style-name">2D Animation | Photoshop | 1:28</p>
+            </div>
+
+            <p>Solace holds particular significance for me as one of the first animated shorts I created. 
+                Developed during a period of profound isolation following the pandemic, the piece reflects 
+                my desire for connection through a narrative that others could relate to. <br>
+
+                <br>As one of my first animated projects, it presented a range of creative and technical challenges. 
+                Produced entirely in Adobe Photoshop at 12 frames per second, the process pushed me to 
+                strengthen my patience, refine my storytelling, and deepen my commitment to the craft.
+
+            </p>
+        </div>
+
+
+        <div id="Doorway" class="tabcontent">
+            <h3>The Doorway</h3>
+
+            <div class="video">
+                <iframe width="560" height="315" src="https://vimeo.com/772074517?fl=ip&fe=ec"
+                frameborder="0" allowfullscreen></iframe>
+
+                <p class ="item-name">Doorway</p>
+                <p class ="style-name">2D Animation | Photoshop | 0:45</p>
+            </div>
+
+            <p>This rotoscoped peice was an experimental project for a class I took in 2022. The Doorway...</p>
+        </div>
+
+
+        <div id="Other" class="tabcontent">
+
+        </div>
+    </main>
+
+
+
+
+
+
+<!-- Footer -->
+    <footer>
+        <!--.social content modified from ChatGPT with the prompt: "Based on my current code,
+         how would I make the social media links into icons  -->
+
+        <!-- I also used chat to help fix some accessibility issues such as
+         creating alt text for the links. -->
+
+    <div class="social">
+        <a href="https://www.instagram.com/nkenn_gallery/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Nuala's Gallery Instagram">
+        <i class="fab fa-instagram" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.instagram.com/noo_alalala/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Nuala's Gallery Instagram">
+        <i class="fab fa-instagram" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/nuala-kennedy-53ab6a214/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Nuala's LinkedIn">
+        <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <p><span id="year"></span></p>
+        <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
+    </footer>
+
+
+
+
+
+    <script src="js/tabs.js"></script>
+</body>
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Nuala's Gallery</title>
+</head>
+
+
+<body>
+
+    <!--skip-->
+    <div class="skip">
+        <a href = "">Skip to Main Content</a>
+    </div>
+
+    <!--header-->
+    <div class="header">
+    <header>
+
+        <!-- Dark mode created with help from
+        https://dev.to/nilebits/10-amazing-things-you-can-do-with-simple-javascript-2d96 -->
+        <button id="toggle-dark-mode">Toggle Dark Mode</button>
+        <script>
+            const button = document.getElementById('toggle-dark-mode');
+            button.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            });
+        </script>
+
+        <!--nav-->
+        <nav>
+            <ul>
+                <li><a href = "index.html">About</a></li>
+                <li><a href = "sketchbook.html"class="active">Sketchbook</a></li>
+                <li><a href = "furniture.html">Furniture</a></li>
+                <li><a href = "animation.html">Animation</a></li>
+            </ul>
+        </nav>
+
+        <!--header-banner-->
+        <div class="header-banner">
+            <h1>My Sketchbook</h1>
+            <h2>Doodles and personal projects</h2>
+        </div>
+
+    </header>
+    </div>
+
+
+    <!-- Content -->
+    <main id="main-content">
+
+        <!-- from W3 schools and Claude -->
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Life Sketches')">Life Sketches</button>
+            <button class="tablinks" onclick="openCity(event, 'Collages')">Collages</button>
+            <button class="tablinks" onclick="openCity(event, 'Pencil Drawings')">Pencil Drawings</button>
+        </div>
+
+
+        <div id="Life Sketches" class="tabcontent">
+            <div class = "content-container" id="baby">
+                <img src="images/life moments/baby.jpg" alt="Todler being lifted">
+                <p class ="item-name">Happy Todler</p>
+                <p class ="style-name">Ink Illustration</p>
+            </div>
+            <div class = "content-container" id="birthday">
+                <img src="images/life moments/birthday.jpg" alt="Child blowing out birthday candles">
+                <p class ="item-name">Birthday Wish</p>
+                <p class ="style-name">Ink Illustration</p>
+            </div>
+            <div class = "content-container" id="DSI">
+                <img src="images/life moments/DSI.jpg" alt="Kids playing a videogame">
+                <p class ="item-name">DSI</p>
+                <p class ="style-name">Ink Illustration</p>
+            </div>
+            <div class = "content-container" id="footsteps">
+                <img src="images/life moments/footsteps.jpg" alt="Kids walking on the beach">
+                <p class ="item-name">Footprints</p>
+                <p class ="style-name">Ink Illustration</p>
+            </div>
+            <div class = "content-container" id="hug">
+                <img src="images/life moments/hug.jpg" alt="Parent and child hugging">
+                <p class ="item-name">Hug</p>
+                <p class ="style-name">Ink Illustration</p>
+            </div>
+            <div class = "content-container" id="math">
+                <img src="images/life moments/math.jpg" alt="Parent helping a kid do homework">
+                <p class ="item-name">Math Homework</p>
+                <p class ="style-name">Ink Illustration</p>
+            </div>
+            <div class = "content-container" id="mom">
+                <img src="images/life moments/mom.jpg" alt="Child hugging her mother's arm">
+                <p class ="item-name">Mom</p>
+                <p class ="style-name">Ink Illustration</p>
+            </div>
+            <div class = "content-container" id="piggyback">
+                <img src="images/life moments/piggyback.jpg" alt="Kid getting a piggyback ride">
+                <p class ="item-name">Piggyback</p>
+                <p class ="style-name">Ink Illustration</p>
+            </div>
+            <div class = "content-container" id="prince">
+                <img src="images/life moments/prince.jpg" alt="Kid sitting alone wearing a crown">
+                <p class ="item-name">Little Prince</p>
+                <p class ="style-name">Ink Illustration</p>
+            </div>
+            <div class = "content-container" id="princess">
+                <img src="images/life moments/princess.jpg" alt="Kid sitting alone wearing a crown">
+                <p class ="item-name">Lonley Princess</p>
+                <p class ="style-name">Ink Illustration</p>
+            </div>
+            <div class = "content-container" id="sportsmanship">
+                <img src="images/life moments/sportmanship.jpg" alt="soccer players conforting eachother">
+                <p class ="item-name">sportsmanship</p>
+                <p class ="style-name">Ink Illustration</p>
+            </div>
+            <div class = "content-container" id="swing">
+                <img src="images/life moments/swing.jpg" alt="two girls on a swing">
+                <p class ="item-name">Swing</p>
+                <p class ="style-name">Ink Illustration</p>
+            </div>
+        </div>
+
+        <div id="Collages" class="tabcontent">
+            <div class = "content-container" id="berry">
+                <img src="images/other/collage1.jpg" alt="berries">
+                <p class ="item-name">Berries</p>
+                <p class ="style-name">Paper Collage</p>
+            </div>
+            <div class = "content-container" id="fork">
+                <img src="images/other/collage2.jpg" alt="fork">
+                <p class ="item-name">Fork</p>
+                <p class ="style-name">Paper Collage</p>
+            </div>
+            <div class = "content-container" id="lips">
+                <img src="images/other/collage3.jpg" alt="lips">
+                <p class ="item-name">Lips</p>
+                <p class ="style-name">Paper Collage</p>
+            </div>
+            <div class = "content-container" id="Music">
+                <img src="images/other/collage4.jpg" alt="two poeple playing guitar">
+                <p class ="item-name">Music</p>
+                <p class ="style-name">Paper Collage</p>
+            </div>
+        </div>
+
+        <div id="Pencil Drawings" class="tabcontent">
+            <div class = "content-container" id="earth">
+                <img src="images/other/earth.jpg" alt="earth from space">
+                <p class ="item-name">Earth</p>
+                <p class ="style-name">Pencil Illustration</p>
+            </div>
+            <div class = "content-container" id="still">
+                <img src="images/other/Value.jpg" alt="still-life of bottles">
+                <p class ="item-name">still-life</p>
+                <p class ="style-name">Pencil Drawing</p>
+            </div>
+            <div class = "content-container" id="still">
+                <img src="images/other/Value2.jpg" alt="still-life">
+                <p class ="item-name">Still-life</p>
+                <p class ="style-name">Pencil Drawing</p>
+            </div>
+            <div class = "content-container" id="nap">
+                <img src="images/other/naptime.jpg" alt="drawings of someone napping">
+                <p class ="item-name">Naptime</p>
+                <p class ="style-name">Digital Sketch</p>
+            </div>
+            <div class = "content-container" id="baseball">
+                <img src="images/other/sketchbook1.jpg" alt="drawings of a kid playing baseball">
+                <p class ="item-name">Baseball Player</p>
+                <p class ="style-name">Pencil Sketch</p>
+            </div>
+            <div class = "content-container" id="point">
+                <img src="images/other/sketchbook2.jpg" alt="drawings of a kid pointing at something">
+                <p class ="item-name">Look!</p>
+                <p class ="style-name">Pencil Sketch</p>
+            </div>
+            <div class = "content-container" id="sleepy">
+                <img src="images/other/sketchbook3.jpg" alt="drawings of a dad resting with his kids">
+                <p class ="item-name">Sleepy</p>
+                <p class ="style-name">Pencil Sketch</p>
+            </div>
+            <div class = "content-container" id="snail">
+                <img src="images/other/snail.jpg" alt="drawings of a snail">
+                <p class ="item-name">Snail</p>
+                <p class ="style-name">Pencil Sketch</p>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+<!-- Footer -->
+    <footer>
+        <!--.social content modified from ChatGPT with the prompt: "Based on my current code,
+         how would I make the social media links into icons  -->
+
+        <!-- I also used chat to help fix some accessibility issues such as
+         creating alt text for the links. -->
+
+    <div class="social">
+        <a href="https://www.instagram.com/nkenn_gallery/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Nuala's Gallery Instagram">
+        <i class="fab fa-instagram" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.instagram.com/noo_alalala/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Nuala's Gallery Instagram">
+        <i class="fab fa-instagram" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/nuala-kennedy-53ab6a214/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Nuala's LinkedIn">
+        <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <p><span id="year"></span></p>
+        <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
+    </footer>
+
+
+
+
+
+    <script src="js/tabs.js"></script>
+</body>
+
+
+
+
+
+
+
+</html>
