@@ -22,3 +22,6 @@ function openCity(evt, cityName) {
   evt.currentTarget.className += " active";
 
 }
+
+// Auto-click the first tab on page load
+document.querySelector(".tablinks").click();
