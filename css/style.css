@@ -20,7 +20,7 @@
 
 /*header*/
 header{
-    background: lightblue;
+    background: #46a2da;
     display: block;
     padding: 10px 0 10px;
 }
@@ -301,6 +301,10 @@ p.style-name{
     border-color: #1a3a5c;
 }
 
+.furniture-images .content-container {
+    width: 45%;
+}
+
 .furniture-images {
     display: none;
     flex-direction: row;
@@ -392,7 +396,7 @@ p.style-name{
 
 /* footer */   /* Claude helped with syling the social buttons */
 footer {
-    background-color: #00274C;
+    background-color: #235284;
     padding: 40px 10%;
     display: flex;
     flex-direction: column;
@@ -454,6 +458,10 @@ body {
 .dark-mode {
     background-color: #121212;
     color: #ffffff;
+
+    header{
+    background: #235284;
+    }
 
     nav a:hover,
     nav a:focus {
